@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digeira - Obrigado Por Comprar!</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="box">
+            <div id="branding">
+                <a href="index.html"><img src="assets/imgs/logo.svg" alt="logo da empresa"></a>
+                <h1>Digeira<span class="motto"> - Sua Feira Digital</span></h1>
+            </div>
+
+            <a href="login.html" id="user-icon"><img alt="Simbolo do Usuário, Simbolizando O Link de Acesso À Sessão 'Sua Conta'" src="assets/imgs/user-icon.png" class="white-svg"></a>
+        </div>
+    </header>
+
+    <main class="form">
+        <div class="box">
+            <h2>Obrigado por dar suporte à barraca!</h2>
+
+            <form class="buy">
+                <div class="input-field">
+                    <label>Senha da Sua Conta:</label>
+                    <input type="password" required>
+                </div>
+
+                <div class="input-field">
+                    <label>Irá pagar com:</label>
+                    <select name="payment-type" id="payment-type" required>
+                        <option value="a">Pix</option>
+                        <option value="b">Débito</option>
+                        <option value="c">Crédito</option>
+                    </select>
+                </div>
+
+                <div class="input-field">
+                    <label>Senha do Cartão:</label>
+                    <input type="password" required>
+                </div>
+
+                <div class="input-field">
+                    <label>O Recebimento do Produto Será Feito Através de:</label>
+                    <select name="withdraw-method" id="withdraw-method" required>
+                        <option value="a">Delivery (Entregar em Sua Casa)</option>
+                        <option value="b">Pessoal (Ir À Feira Para Receber Pessoalmente)</option>
+                    </select>
+                </div>
+
+                <input type="submit" value="Comprar">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="box">
+            <div id="address">
+                <a target="_blank" href="https://www.google.com/maps/place/Feira+da+304+Sul/@-10.1980077,-48.3317277,17z/data=!3m1!4b1!4m6!3m5!1s0x933b33d0967b012b:0x6acc01ba617ec4eb!8m2!3d-10.1980077!4d-48.3291528!16s%2Fg%2F11s2ql_6mm?entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D"><img src="assets/imgs/location-dot.svg" class="white-svg" alt="Imagem de um pino localizador de mapas"></a>
+                <a target="_blank" href="https://www.google.com/maps/place/Feira+da+304+Sul/@-10.1980077,-48.3317277,17z/data=!3m1!4b1!4m6!3m5!1s0x933b33d0967b012b:0x6acc01ba617ec4eb!8m2!3d-10.1980077!4d-48.3291528!16s%2Fg%2F11s2ql_6mm?entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D">Feira 304 Sul - Palmas Tocantins</a>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://youtube.com" target="_blank"><img src="assets/imgs/social-logos/youtube-logo.svg" alt="Logo do Youtube"></a>
+                <a href="https://instagram.com" target="_blank"><img src="assets/imgs/social-logos/instagram-logo.svg" alt="Logo do Instagram"></a>
+                <a href="https://web.whatsapp.com" target="_blank"><img src="assets/imgs/social-logos/whatsapp-logo.svg" alt="Logo do Whatsapp"></a>
+                <a href="https://telegram.org" target="_blank"><img src="assets/imgs/social-logos/telegram-logo.svg" alt="Logo do Telegram"></a>
+            </div>
+
+            <a href="about-us.html" id="about-link">Sobre Nós</a>
+
+            <small>Projeto Digeira &copy; 2024. Todos os direitos reservados</small>
+        </div>
+    </footer>
+</body>
+</html>

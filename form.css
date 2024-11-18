@@ -1,0 +1,64 @@
+main.form form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 5px;
+}
+
+.input-field{
+    display: grid;
+    grid-template-columns: minmax(auto,50%) minmax(auto,50%);
+    margin: 20px auto;
+    width: 90%;
+}
+
+.input-field input[type="text"],.input-field input[type="password"],.input-field input[type="tel"],.input-field input[type="number"],.input-field input[type="email"]{
+    border: none;
+    border-bottom: 1px solid #000;
+    background-color: transparent;
+    color: var(--text-color1)
+}
+
+.input-field input:focus, select{
+  outline: none;
+}
+
+input::placeholder{
+    color: #fff9;
+}
+
+input[type="submit"]{
+    width: 70%;
+    color: var(--text-color1);
+    border: 1px solid var(--text-color1);
+    background-color: var(--bg-color2);
+    border-radius: 1px;
+    height: 50px;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    display: block;
+    margin: 15px auto;
+}
+
+input[type="submit"]:hover{
+    border-radius: 20px;
+    background-color: var(--bg-color1);
+}
+
+option{
+    background-color: var(--bg-color2);
+    transition: all 0.5 ease-out;
+    color: var(--text-color1);
+}
+
+
+@media only screen and (max-width: 600px){
+    .input-field{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input-field label{
+        margin-bottom: 10px;
+    }
+}
